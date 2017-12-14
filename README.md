@@ -23,7 +23,7 @@ import {
 
 ### `class PreviewableIterable`
 
-`PreviewableIterable` implements `PreviewableIterable`, which means it provides
+`PreviewableIterable` implements `IterableIterator`, which means it provides
 proper interface for both Iterable and Iterator. About the interface, please
 refer to the following MDN documentation.
 
