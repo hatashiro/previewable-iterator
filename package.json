@@ -1,0 +1,23 @@
+{
+  "name": "previewable-iterator",
+  "version": "0.0.0",
+  "description": "Previewable Iterable/Iterator for JavaScript/TypeScript",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo no test yet"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/utatti/previewable-iterator.git"
+  },
+  "keywords": [
+    "iterator",
+    "typescript"
+  ],
+  "author": "Hyunje Jun <me@noraesae.net>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/utatti/previewable-iterator/issues"
+  },
+  "homepage": "https://github.com/utatti/previewable-iterator"
+}
