@@ -1,6 +1,6 @@
 {
   "name": "previewable-iterator",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Previewable Iterable/Iterator for JavaScript/TypeScript",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -17,7 +17,7 @@
     "clean": "del-cli dist",
     "prebuild": "npm run check-format && npm run clean",
     "build": "tsc",
-    "release": "npm run test && npm publish",
+    "release": "npm i && npm run test && npm publish",
     "precommit": "npm run check-format",
     "prepush": "npm run test"
   },
