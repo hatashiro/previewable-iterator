@@ -45,7 +45,7 @@ actually consuming an iteration step.
 ### `previewable(iterable: Iterable)`
 
 It is a helper function for `PreviewableIterable`, accepts an iterable. It
-creates an interator for the iterable, and apply it to `PreviewableIterable`.
+creates an iterator from the iterable, and apply it to `PreviewableIterable`.
 
 ``` typescript
 // e.g.
