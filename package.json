@@ -4,6 +4,10 @@
   "description": "Previewable Iterable/Iterator for JavaScript/TypeScript",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
   "scripts": {
     "prettier": "prettier --parser typescript --trailing-comma all \"src/**/*.ts\"",
     "format": "npm run prettier -- --write",
