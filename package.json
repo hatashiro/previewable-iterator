@@ -4,7 +4,17 @@
   "description": "Previewable Iterable/Iterator for JavaScript/TypeScript",
   "main": "dist/index.js",
   "scripts": {
-    "test": "echo no test yet"
+    "prettier": "prettier --parser typescript --trailing-comma all \"src/**/*.ts\"",
+    "format": "npm run prettier -- --write",
+    "check-format": "npm run prettier -- -l",
+    "pretest": "npm run build",
+    "test": "node dist/test",
+    "clean": "del-cli dist",
+    "prebuild": "npm run check-format && npm run clean",
+    "build": "tsc",
+    "release": "npm run test && npm publish",
+    "precommit": "npm run check-format",
+    "prepush": "npm run test"
   },
   "repository": {
     "type": "git",
@@ -19,5 +29,11 @@
   "bugs": {
     "url": "https://github.com/utatti/previewable-iterator/issues"
   },
-  "homepage": "https://github.com/utatti/previewable-iterator"
+  "homepage": "https://github.com/utatti/previewable-iterator",
+  "devDependencies": {
+    "del-cli": "^1.1.0",
+    "husky": "^0.14.3",
+    "prettier": "^1.9.2",
+    "typescript": "^2.6.2"
+  }
 }
